@@ -1,0 +1,163 @@
+[
+  {
+    "id": "trk_1290",
+    "registrationNumber": "TN-09-CD-1290",
+    "vehicleType": "6-Wheeler",
+    "capacityTon": 20,
+    "city": "Salem",
+    "driverName": "Murugan R",
+    "driverMobile": "+919043228316",
+    "status": "on-trip",
+    "currentTripReference": "TRIP-901",
+    "lastTripAt": "2026-07-04T06:40:00+05:30",
+    "documents": [
+      { "id": "trk_1290_rc", "label": "RC Book", "status": "verified", "expiresOn": "2031-08-30" },
+      {
+        "id": "trk_1290_ins",
+        "label": "Insurance",
+        "status": "pending",
+        "expiresOn": "2026-07-31"
+      },
+      {
+        "id": "trk_1290_permit",
+        "label": "National Permit",
+        "status": "verified",
+        "expiresOn": "2027-03-14"
+      },
+      {
+        "id": "trk_1290_fit",
+        "label": "Fitness Certificate",
+        "status": "verified",
+        "expiresOn": "2028-01-09"
+      }
+    ]
+  },
+  {
+    "id": "trk_4471",
+    "registrationNumber": "TN-38-AB-4471",
+    "vehicleType": "32ft MXL",
+    "capacityTon": 18,
+    "city": "Coimbatore",
+    "driverName": "Balamurugan K",
+    "driverMobile": "+919043792433",
+    "status": "waiting-for-load",
+    "lastTripAt": "2026-06-28T14:30:00+05:30",
+    "documents": [
+      { "id": "trk_4471_rc", "label": "RC Book", "status": "verified", "expiresOn": "2030-11-02" },
+      {
+        "id": "trk_4471_ins",
+        "label": "Insurance",
+        "status": "verified",
+        "expiresOn": "2027-01-19"
+      },
+      {
+        "id": "trk_4471_permit",
+        "label": "National Permit",
+        "status": "verified",
+        "expiresOn": "2027-06-25"
+      },
+      {
+        "id": "trk_4471_fit",
+        "label": "Fitness Certificate",
+        "status": "expired",
+        "expiresOn": "2026-06-30"
+      }
+    ]
+  },
+  {
+    "id": "trk_8820",
+    "registrationNumber": "KA-05-MN-8820",
+    "vehicleType": "20ft Container",
+    "capacityTon": 12,
+    "city": "Bengaluru",
+    "driverName": "Dhananjaya M",
+    "driverMobile": "+919538863431",
+    "status": "unloading",
+    "lastTripAt": "2026-06-20T16:45:00+05:30",
+    "documents": [
+      { "id": "trk_8820_rc", "label": "RC Book", "status": "verified", "expiresOn": "2032-05-21" },
+      {
+        "id": "trk_8820_ins",
+        "label": "Insurance",
+        "status": "verified",
+        "expiresOn": "2027-04-08"
+      },
+      {
+        "id": "trk_8820_permit",
+        "label": "National Permit",
+        "status": "pending",
+        "expiresOn": "2026-09-12"
+      },
+      {
+        "id": "trk_8820_fit",
+        "label": "Fitness Certificate",
+        "status": "verified",
+        "expiresOn": "2029-10-03"
+      }
+    ]
+  },
+  {
+    "id": "trk_8174",
+    "registrationNumber": "TN-29-CU-8174",
+    "vehicleType": "22ft Open",
+    "capacityTon": 15,
+    "city": "Trichy",
+    "driverName": "Gopinath K",
+    "driverMobile": "+919944357559",
+    "status": "waiting-for-load",
+    "lastTripAt": "2026-06-24T11:05:00+05:30",
+    "documents": [
+      { "id": "trk_8174_rc", "label": "RC Book", "status": "verified", "expiresOn": "2030-02-17" },
+      {
+        "id": "trk_8174_ins",
+        "label": "Insurance",
+        "status": "verified",
+        "expiresOn": "2026-12-01"
+      },
+      {
+        "id": "trk_8174_permit",
+        "label": "National Permit",
+        "status": "verified",
+        "expiresOn": "2028-08-19"
+      },
+      {
+        "id": "trk_8174_fit",
+        "label": "Fitness Certificate",
+        "status": "verified",
+        "expiresOn": "2027-11-27"
+      }
+    ]
+  },
+  {
+    "id": "trk_6393",
+    "registrationNumber": "TN-52-D-6393",
+    "vehicleType": "10-Wheeler",
+    "capacityTon": 25,
+    "city": "Madurai",
+    "driverName": "Salammal S",
+    "driverMobile": "+919488524237",
+    "status": "maintenance",
+    "lastTripAt": "2026-06-15T18:20:00+05:30",
+    "documents": [
+      { "id": "trk_6393_rc", "label": "RC Book", "status": "verified", "expiresOn": "2029-07-14" },
+      {
+        "id": "trk_6393_ins",
+        "label": "Insurance",
+        "status": "verified",
+        "expiresOn": "2027-02-28"
+      },
+      {
+        "id": "trk_6393_permit",
+        "label": "National Permit",
+        "status": "verified",
+        "expiresOn": "2027-09-05"
+      },
+      {
+        "id": "trk_6393_fit",
+        "label": "Fitness Certificate",
+        "status": "verified",
+        "expiresOn": "2028-04-22"
+      }
+    ]
+  }
+]

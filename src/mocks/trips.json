@@ -1,0 +1,218 @@
+[
+  {
+    "id": "trip_901",
+    "reference": "TRIP-901",
+    "indentReference": "1180",
+    "origin": "Salem",
+    "destination": "Kochi",
+    "contactName": "Anita George",
+    "contactMobile": "+919846332211",
+    "truckNumber": "TN-09-CD-1290",
+    "loadType": "Cement",
+    "weightTon": 20,
+    "vehicleType": "6-Wheeler",
+    "orderDate": "2026-07-03",
+    "loadingDate": "2026-07-04",
+    "status": "in-transit",
+    "timeline": [
+      {
+        "status": "assigned",
+        "label": "Assigned",
+        "description": "Reassigned to you",
+        "at": "2026-07-03T10:12:00+05:30",
+        "complete": true
+      },
+      {
+        "status": "started",
+        "label": "Started",
+        "description": "Pickup confirmed",
+        "at": "2026-07-04T06:40:00+05:30",
+        "complete": true
+      },
+      {
+        "status": "in-transit",
+        "label": "In Transit",
+        "description": "On the way",
+        "at": "2026-07-04T09:05:00+05:30",
+        "complete": true
+      },
+      {
+        "status": "delivered",
+        "label": "Delivered",
+        "description": "Load handed over",
+        "at": null,
+        "complete": false
+      }
+    ],
+    "payment": {
+      "tripRate": 19800,
+      "tdsPercent": 1,
+      "tdsAmount": 198,
+      "advancePaid": 5000,
+      "totalPayable": 19602,
+      "balanceDue": 14602
+    }
+  },
+  {
+    "id": "trip_884",
+    "reference": "TRIP-884",
+    "indentReference": "1154",
+    "origin": "Chennai",
+    "destination": "Coimbatore",
+    "contactName": "Karthik S",
+    "contactMobile": "+919442556677",
+    "truckNumber": "TN-38-AB-4471",
+    "loadType": "Auto Parts",
+    "weightTon": 14,
+    "vehicleType": "32ft MXL",
+    "orderDate": "2026-06-26",
+    "loadingDate": "2026-06-27",
+    "status": "delivered",
+    "timeline": [
+      {
+        "status": "assigned",
+        "label": "Assigned",
+        "description": "Reassigned to you",
+        "at": "2026-06-26T09:00:00+05:30",
+        "complete": true
+      },
+      {
+        "status": "started",
+        "label": "Started",
+        "description": "Pickup confirmed",
+        "at": "2026-06-27T05:50:00+05:30",
+        "complete": true
+      },
+      {
+        "status": "in-transit",
+        "label": "In Transit",
+        "description": "On the way",
+        "at": "2026-06-27T08:15:00+05:30",
+        "complete": true
+      },
+      {
+        "status": "delivered",
+        "label": "Delivered",
+        "description": "Load handed over",
+        "at": "2026-06-28T14:30:00+05:30",
+        "complete": true
+      }
+    ],
+    "payment": {
+      "tripRate": 16400,
+      "tdsPercent": 1,
+      "tdsAmount": 164,
+      "advancePaid": 16236,
+      "totalPayable": 16236,
+      "balanceDue": 0
+    }
+  },
+  {
+    "id": "trip_872",
+    "reference": "TRIP-872",
+    "indentReference": "1141",
+    "origin": "Bengaluru",
+    "destination": "Madurai",
+    "contactName": "Divya Rao",
+    "contactMobile": "+919885447711",
+    "truckNumber": "KA-05-MN-8820",
+    "loadType": "FMCG",
+    "weightTon": 10,
+    "vehicleType": "20ft Container",
+    "orderDate": "2026-06-18",
+    "loadingDate": "2026-06-19",
+    "status": "delivered",
+    "timeline": [
+      {
+        "status": "assigned",
+        "label": "Assigned",
+        "description": "Reassigned to you",
+        "at": "2026-06-18T11:20:00+05:30",
+        "complete": true
+      },
+      {
+        "status": "started",
+        "label": "Started",
+        "description": "Pickup confirmed",
+        "at": "2026-06-19T07:10:00+05:30",
+        "complete": true
+      },
+      {
+        "status": "in-transit",
+        "label": "In Transit",
+        "description": "On the way",
+        "at": "2026-06-19T10:00:00+05:30",
+        "complete": true
+      },
+      {
+        "status": "delivered",
+        "label": "Delivered",
+        "description": "Load handed over",
+        "at": "2026-06-20T16:45:00+05:30",
+        "complete": true
+      }
+    ],
+    "payment": {
+      "tripRate": 21500,
+      "tdsPercent": 1,
+      "tdsAmount": 215,
+      "advancePaid": 21285,
+      "totalPayable": 21285,
+      "balanceDue": 0
+    }
+  },
+  {
+    "id": "trip_860",
+    "reference": "TRIP-860",
+    "indentReference": "1129",
+    "origin": "Kochi",
+    "destination": "Salem",
+    "contactName": "Anita George",
+    "contactMobile": "+919846332211",
+    "truckNumber": "TN-09-CD-1290",
+    "loadType": "Agri Produce",
+    "weightTon": 18,
+    "vehicleType": "6-Wheeler",
+    "orderDate": "2026-06-09",
+    "loadingDate": "2026-06-10",
+    "status": "delivered",
+    "timeline": [
+      {
+        "status": "assigned",
+        "label": "Assigned",
+        "description": "Reassigned to you",
+        "at": "2026-06-09T08:30:00+05:30",
+        "complete": true
+      },
+      {
+        "status": "started",
+        "label": "Started",
+        "description": "Pickup confirmed",
+        "at": "2026-06-10T06:00:00+05:30",
+        "complete": true
+      },
+      {
+        "status": "in-transit",
+        "label": "In Transit",
+        "description": "On the way",
+        "at": "2026-06-10T09:20:00+05:30",
+        "complete": true
+      },
+      {
+        "status": "delivered",
+        "label": "Delivered",
+        "description": "Load handed over",
+        "at": "2026-06-11T13:10:00+05:30",
+        "complete": true
+      }
+    ],
+    "payment": {
+      "tripRate": 18200,
+      "tdsPercent": 1,
+      "tdsAmount": 182,
+      "advancePaid": 18018,
+      "totalPayable": 18018,
+      "balanceDue": 0
+    }
+  }
+]

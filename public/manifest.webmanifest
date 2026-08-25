@@ -1,0 +1,17 @@
+{
+  "name": "TripleA Transport — Partner",
+  "short_name": "TripleA Partner",
+  "description": "Browse available indents, track your trips, manage your fleet and payments.",
+  "theme_color": "#0A1028",
+  "background_color": "#0A1028",
+  "display": "standalone",
+  "orientation": "any",
+  "scope": "/",
+  "start_url": "/",
+  "categories": ["business", "productivity"],
+  "icons": [
+    { "src": "/pwa-192x192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/pwa-512x512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "/pwa-maskable-512x512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

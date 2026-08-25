@@ -1,0 +1,24 @@
+{
+  "id": "ptr_00594",
+  "code": "PT00594",
+  "name": "Suresh Kumar",
+  "mobile": "+919876554322",
+  "company": "SK Logistics",
+  "city": "Salem",
+  "initials": "SK",
+  "panMasked": "OWMPS****L",
+  "memberSince": "2023-04-18",
+  "rating": 4.6,
+  "documents": [
+    { "id": "doc_dl", "label": "Driving License", "status": "verified", "expiresOn": "2029-02-11" },
+    { "id": "doc_rc", "label": "RC Book", "status": "verified", "expiresOn": "2031-08-30" },
+    { "id": "doc_ins", "label": "Insurance", "status": "pending", "expiresOn": "2026-07-31" }
+  ],
+  "bank": {
+    "accountHolder": "Suresh Kumar",
+    "accountNumberMasked": "XXXX XXXX 4521",
+    "bank": "HDFC Bank",
+    "gpayNumber": "+919876554322",
+    "gpayName": "Suresh Kumar"
+  }
+}

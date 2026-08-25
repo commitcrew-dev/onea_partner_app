@@ -1,0 +1,138 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+ * Semantic colour tokens. Every value was sampled from the UI recording:
+ *   cream page  #F9EBE0   navy header #0A1028   brand orange #EF4423
+ *   dark page   #131218   dark card   #1B1C21   dark header  #050511
+ * Tailwind consumes these through the `surface`/`card`/`content`… colour names.
+ */
+@layer base {
+  :root,
+  .light {
+    /* Warm off-cream page so white cards visibly float against the background. */
+    --c-surface: 247 242 234;
+    --c-surface-alt: 240 233 222;
+    --c-card: 255 255 255;
+    --c-header: 10 16 40;
+    --c-text: 20 24 44;
+    --c-text-muted: 96 102 118;
+    --c-text-faint: 148 140 122;
+    --c-border: 224 214 198;
+    --c-sheet: 10 16 40;
+    --c-sheet-text: 255 255 255;
+    color-scheme: light;
+  }
+
+  .dark {
+    --c-surface: 19 18 24;
+    --c-surface-alt: 23 23 31;
+    --c-card: 27 28 33;
+    --c-header: 5 5 17;
+    --c-text: 245 245 247;
+    --c-text-muted: 160 162 172;
+    --c-text-faint: 120 122 132;
+    --c-border: 45 46 54;
+    --c-sheet: 10 16 40;
+    --c-sheet-text: 255 255 255;
+    color-scheme: dark;
+  }
+
+  * {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  html,
+  body,
+  #root {
+    height: 100%;
+  }
+
+  html {
+    /* Global ~6% shrink on rem-based Tailwind text classes (base 16→15). */
+    font-size: 15px;
+  }
+
+  body {
+    @apply bg-surface font-sans text-content antialiased;
+    overscroll-behavior-y: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    letter-spacing: -0.005em;
+  }
+
+  /* Native-feeling momentum scroll without visible scrollbars on touch devices. */
+  .scroll-area {
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+  }
+
+  .scroll-area::-webkit-scrollbar {
+    width: 4px;
+  }
+
+  .scroll-area::-webkit-scrollbar-thumb {
+    @apply rounded-full bg-line;
+  }
+
+  /* Keyboard users get a clear brand-coloured ring; pointer users do not. */
+  :focus-visible {
+    @apply outline-none ring-2 ring-brand ring-offset-2 ring-offset-surface;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+
+@layer components {
+  /* The thin brand rule that sits under the navy header on every screen. */
+  .header-rule {
+    @apply h-[2px] w-full bg-brand;
+  }
+
+  .card-base {
+    @apply rounded-card border border-line/70 bg-card shadow-card dark:shadow-card-dark;
+  }
+
+  .pressable {
+    @apply transition-all duration-150 active:scale-[0.97] hover:brightness-[0.98];
+  }
+
+  /* Numeric data (money, weights, registration plates) aligns better tabular. */
+  .tnum {
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+@layer utilities {
+  .pt-safe {
+    padding-top: env(safe-area-inset-top);
+  }
+  .pb-safe {
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+  .px-safe {
+    padding-left: env(safe-area-inset-left);
+    padding-right: env(safe-area-inset-right);
+  }
+  .mb-safe {
+    margin-bottom: env(safe-area-inset-bottom);
+  }
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}

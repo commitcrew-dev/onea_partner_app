@@ -1,0 +1,73 @@
+[
+  {
+    "id": "ntf_501",
+    "kind": "indent",
+    "title": "New indent on your route",
+    "body": "Coimbatore → Hyderabad · 9 Ton Textiles · ₹22,000. Posted 20 minutes ago.",
+    "at": "2026-07-04T21:20:00+05:30",
+    "read": false,
+    "link": "/indents/ind_1198"
+  },
+  {
+    "id": "ntf_500",
+    "kind": "trip",
+    "title": "TRIP-901 is in transit",
+    "body": "Murugan R confirmed pickup at Salem and is on the way to Kochi.",
+    "at": "2026-07-04T09:05:00+05:30",
+    "read": false,
+    "link": "/trips/trip_901"
+  },
+  {
+    "id": "ntf_499",
+    "kind": "document",
+    "title": "Insurance expiring soon",
+    "body": "Insurance for TN-09-CD-1290 expires on 31 Jul 2026. Upload the renewed copy to stay eligible for indents.",
+    "at": "2026-07-04T08:00:00+05:30",
+    "read": false,
+    "link": "/trucks/trk_1290"
+  },
+  {
+    "id": "ntf_498",
+    "kind": "payment",
+    "title": "Advance released",
+    "body": "₹5,000 advance for TRIP-901 has been sent to HDFC Bank ····4521.",
+    "at": "2026-07-03T18:42:00+05:30",
+    "read": true,
+    "link": "/trips/trip_901"
+  },
+  {
+    "id": "ntf_497",
+    "kind": "trip",
+    "title": "TRIP-901 assigned to you",
+    "body": "Salem → Kochi · 20 Ton Cement · 6-Wheeler. Loading date 04 Jul 2026.",
+    "at": "2026-07-03T10:12:00+05:30",
+    "read": true,
+    "link": "/trips/trip_901"
+  },
+  {
+    "id": "ntf_496",
+    "kind": "payment",
+    "title": "Balance settled for TRIP-884",
+    "body": "₹16,236 credited against Chennai → Coimbatore. TDS ₹164 deducted.",
+    "at": "2026-06-30T12:15:00+05:30",
+    "read": true,
+    "link": "/trips/trip_884"
+  },
+  {
+    "id": "ntf_495",
+    "kind": "document",
+    "title": "Fitness certificate expired",
+    "body": "TN-38-AB-4471 fitness certificate expired on 30 Jun 2026. The truck cannot be assigned until renewed.",
+    "at": "2026-06-30T07:00:00+05:30",
+    "read": true,
+    "link": "/trucks/trk_4471"
+  },
+  {
+    "id": "ntf_494",
+    "kind": "system",
+    "title": "Diesel rate revision",
+    "body": "Tamil Nadu diesel rates revised from 01 Jul. Trip rates on long-haul routes have been adjusted accordingly.",
+    "at": "2026-06-29T09:30:00+05:30",
+    "read": true
+  }
+]
