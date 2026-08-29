@@ -25,7 +25,7 @@ describe('applyIndentFilters', () => {
   });
 
   it('matches a route against origin or destination', () => {
-    const chennai = applyIndentFilters(db.indents, filters({ route: 'Chennai' }));
+    const chennai = applyIndentFilters(db.indents, filters({ route: ['Chennai'] }));
     // #1201 departs Chennai and #1187 arrives there.
     expect(chennai.map((indent) => indent.reference).sort()).toEqual(['1187', '1201']);
   });
@@ -39,7 +39,7 @@ describe('applyIndentFilters', () => {
   it('combines facets conjunctively', () => {
     const result = applyIndentFilters(
       db.indents,
-      filters({ status: 'open', route: 'Coimbatore', type: 'Textiles' }),
+      filters({ status: 'open', route: ['Coimbatore'], type: 'Textiles' }),
     );
     expect(result).toHaveLength(1);
     expect(result[0].reference).toBe('1198');
@@ -47,7 +47,7 @@ describe('applyIndentFilters', () => {
 
   it('returns nothing when facets conflict', () => {
     expect(
-      applyIndentFilters(db.indents, filters({ route: 'Kochi', type: 'FMCG' })),
+      applyIndentFilters(db.indents, filters({ route: ['Kochi'], type: 'FMCG' })),
     ).toHaveLength(0);
   });
 });
@@ -55,8 +55,8 @@ describe('applyIndentFilters', () => {
 describe('countActiveFilters', () => {
   it('counts only the facets narrowed away from "all"', () => {
     expect(countActiveFilters(DEFAULT_INDENT_FILTERS)).toBe(0);
-    expect(countActiveFilters(filters({ route: 'Salem' }))).toBe(1);
-    expect(countActiveFilters(filters({ route: 'Salem', status: 'open' }))).toBe(2);
+    expect(countActiveFilters(filters({ route: ['Salem'] }))).toBe(1);
+    expect(countActiveFilters(filters({ route: ['Salem'], status: 'open' }))).toBe(2);
   });
 });
 

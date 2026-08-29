@@ -20,6 +20,7 @@ import { queryKeys } from '@/api/queryClient';
 import { truckService } from '@/services/truck.service';
 import { tripService } from '@/services/trip.service';
 import { formatMobile, formatShortDate, formatWeight } from '@/utils/format';
+import type { DocumentStatus } from '@/types';
 import type { ReactNode } from 'react';
 
 /** Icon + label + value row — the primary layout unit on this screen. */
@@ -204,13 +205,19 @@ export function TruckDetailPage() {
   );
 }
 
-function StatusPill({ status }: { status: 'verified' | 'pending' | 'expired' }) {
+function StatusPill({ status }: { status: DocumentStatus }) {
   const styles = {
     verified: 'bg-success/15 text-success',
     pending: 'bg-warning/15 text-warning',
     expired: 'bg-danger/15 text-danger',
+    rejected: 'bg-danger/15 text-danger',
   } as const;
-  const label = { verified: 'Verified', pending: 'Pending', expired: 'Expired' }[status];
+  const label = {
+    verified: 'Verified',
+    pending: 'Pending',
+    expired: 'Expired',
+    rejected: 'Rejected',
+  }[status];
   return (
     <span
       className={`rounded-full px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider ${styles[status]}`}

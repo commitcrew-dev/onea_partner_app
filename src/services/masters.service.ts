@@ -14,7 +14,7 @@ export const mastersService = {
       // In mock mode we reuse the city list as a stand-in for branches.
       const list = search
         ? CITIES.filter((c) => c.toLowerCase().includes(search.toLowerCase()))
-        : CITIES;
+        : [...CITIES];
       return delay(list, 120);
     }
     const { data } = await apiClient.get<ApiEnvelope<string[]>>('/masters/branches', {
